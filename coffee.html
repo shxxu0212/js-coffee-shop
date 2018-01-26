@@ -144,9 +144,9 @@
 
     function revenue() {
         for (let drink of drinksOrdered) {
-            total += prices[drink] 
+            total += prices[drink]
         }
-        revenueMessage.total("$" + html);
+        revenueMessage.html("$" + total.toFixed(2));
     }
 
 
